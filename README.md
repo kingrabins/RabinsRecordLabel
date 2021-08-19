@@ -15,6 +15,7 @@ Finally, for the development I have used HTML, CSS, and JavaScript. I have built
 
 I made a rough sketch on my paper and made some corrections and finalized them. After that I made wireframe designs for every page following my rough draft from paper.
 Once my wireframes were ready, I picked color that will match my system. Since it is about music and events, I picked vibrant colors from COOLERS. After that, I made different logo designs for my website and finalized one which is shown below.
+
 ![LOGOR](https://user-images.githubusercontent.com/81344523/130096335-9447318c-34e2-4116-a78d-5327ba28f518.png)
 
 The following are the color palettes that I picked for my logo design and later used them for overall prototypes and development.
