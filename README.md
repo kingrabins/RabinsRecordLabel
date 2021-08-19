@@ -6,8 +6,13 @@ Rabins Record Label is fictional Record Label based on music industry and the we
 ![HomePageDark (2)](https://user-images.githubusercontent.com/81344523/130088467-1230096e-d6a0-4b7a-84d8-bbcf0e749df3.png)
 
 
-In the Music interface, user can listen to their favorite music recommended by the system. The Studio page has details about all the featured and signed artist the record label has along with the gallery of recent studio events. Similarly, the Events interface has information about the recent event related to studio artists and there is also interface for users to book shows with the studio or their favorite artists. The Connect menu has two interfaces linked to it and they are About and Contact pages as shown in figure below.
+In the Music interface, user can listen to their favorite music recommended by the system. The Studio page has details about all the featured and signed artist the record label has along with the gallery of recent studio events. Similarly, the Events interface has information about the recent event related to studio artists and there is also interface for users to book shows with the studio or their favorite artists. The Connect menu has two interfaces linked to it and they are About and Contact Pages.
+The interface of About page has all the information about the Record label and Contact page allows user to give feedback message and has contact details. And finally, Register and Login interface is for user registration and login, respectively.
 
+### Wireframe and Mockups Design
+
+* [Figma](https://www.figma.com/file/p4npjfSxYBCWO0lplvFlHX/Prototypes-HCI-Project?node-id=0%3A1)
+* [AdobeXd](https://www.adobe.com/products/xd.html)
 
 
 ### Built With
@@ -17,7 +22,7 @@ In the Music interface, user can listen to their favorite music recommended by t
 * [JS](https://www.javascript.com/)
 * [JSON](https://www.json.org/json-en.html)
 
-## Authors
+## Author
 
 * [@rabinsraizeee](https://github.com/rabinsraizeee)
 
