@@ -27,6 +27,7 @@ The following are the color palettes that I picked for my logo design and later 
 
 ## Wireframe and Mockups Design
 
+Link to design:
 * [Figma](https://www.figma.com/file/p4npjfSxYBCWO0lplvFlHX/Prototypes-HCI-Project?node-id=0%3A1)
 * [AdobeXd](https://www.adobe.com/products/xd.html)
 
