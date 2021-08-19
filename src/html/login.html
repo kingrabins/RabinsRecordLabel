@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Rabins Record Label</title>
+    <link rel="icon" href="../image/ICON.png" type="icon" sizes="16x16">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.0/dist/sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="../css/lightTheme.css">
+    <link class="theme" rel="stylesheet" type="text/css" href="../css/login.css">
+    <script></script>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="main-nav">
+        <nav id="navi">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+            <i class="fa fa-bars"></i>
+            </label>
+            <a style="margin-left: 40px;" href="index.html"><img src="../image/LOGOR.png" alt="Logo"></a>
+            <ul>
+            <li><a class="active" href="index.html">HOME</a></li>
+            <li><a href="music.html">MUSIC</a></li>
+            <li><a href="studio.html">STUDIO</a></li>
+            <li><a href="events.html">EVENTS</a></li>
+            <li><a href="about.html">CONNECT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Login Section -->
+    <h3 class="reg-h">Login now to get the best of <br> our studio records.</h3>
+    <section class="section-login">
+        <div class="main-login">
+            <!-- Login Part -->
+            <h1>Login to our Studio</h1>
+            <form id="form-login">
+                <div>
+                    <!-- To keep Label Name -->
+                    <!-- <br> is used as single line break  -->
+                    <label for="username"><b>Username</b></label> <br>
+                    <label for="pass"><b>Password</b></label>
+                </div>
+                <div>
+                    <!-- To keep text fields -->
+                    <!-- placeholder is used to write text information in input textfields 
+                      all text fields options are set to required for successful Login -->
+                    <input id="user" type="text" placeholder="Enter Username" name="" required=""> <br>
+                    <input id="pass" type="password" placeholder="Enter Password" name="" required=""><br>
+                    <input style="max-width: 30px; margin-bottom: 40px;" type="checkbox" onclick="showPass()"><span>Show Password</span> <br>
+                    <a href="#" onclick="signUp()">Login</a>
+                    <!-- Set button type as submit -->
+                </div>
+            </form>
+        </div>
+        <div class=" main-register ">
+            <!-- Register Link Part -->
+            <!-- <br> is used as single line break  -->
+            <p>Is this <br> your <br> first time?</p>
+            <!-- p tag is for writing paragraph/text -->
+            <a href="register.html "><button>Register</button></a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="main-footer ">
+        <div class="social-links ">
+            <h1>Find us on Social Media</h1>
+            <div class="social-icon">
+                <a href="https://www.instagram.com/" target=”_blank”><i class="fa fa-instagram"></i></a>
+                <a href="https://www.facebook.com/" target=”_blank”><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/" target=”_blank”><i class="fa fa-twitter"></i></a>
+                <a href="https://www.spotify.com/us/" target=”_blank”><i class="fa fa-spotify"></i></a>
+                <a href="https://www.youtube.com/" target=”_blank”><i class="fa fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="copyright ">
+            <p>© Rabins Record Label. All rights reserved 2021.</p>
+        </div>
+    </footer>
+
+    <!-- Script Links -->
+    <script src="../js/format.js "></script>
+</body>
+
+</html>

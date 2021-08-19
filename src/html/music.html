@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music - Rabins Record Label</title>
+    <link rel="icon" href="../image/ICON.png" type="icon" sizes="16x16">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link class="theme" rel="stylesheet" type="text/css" href="../css/lightTheme.css">
+    <script></script>
+    <style>
+        .main-info {
+            background-image: url("../image/audio.jpg");
+        }
+        
+        .main-booking {
+            background-image: url(../image/microphone.jpg);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="main-nav">
+        <nav id="navi">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+            <i class="fa fa-bars"></i>
+            </label>
+            <a style="margin-left: 40px;" href="index.html"><img src="../image/LOGOR.png" alt="Logo"></a>
+            <ul>
+            <li><a class="active" href="index.html">HOME</a></li>
+            <li><a href="music.html">MUSIC</a></li>
+            <li><a href="studio.html">STUDIO</a></li>
+            <li><a href="events.html">EVENTS</a></li>
+            <li><a href="about.html">CONNECT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Usability Section -->
+    <section class="topnav">
+        <div class="search-container">
+            <div class="user-exp">
+                <h2> Preferences </h2>
+                <span onclick="toggleTheme('../css/smallFont.css');">A-</span>
+                <span><i onclick="toggleTheme('../css/lightTheme.css');" class="fa fa-sun-o"></i></span>
+                <span>|</span>
+                <span onclick="toggleTheme('../css/darkSmall.css');">A-</span>
+                <span><i onclick="toggleTheme('../css/darkTheme.css');" class="fa fa-moon-o"></i></span>
+            </div>
+            <div class="losss">
+                <input type="text" placeholder="Search..." name="search">
+                <i id="searchh" class="fa fa-search"></i>
+                <a href="login.html ">SignUp</a>
+                <i style="padding: 10px 0;font-size: 25px;color: #FF157E;margin-right: 20px; " class="fa fa-user"></i>
+            </div>
+        </div>
+        <button onclick="topFunction() " id="myBtn" title="Go to top"><i class="fa fa-chevron-up "></i></button>
+    </section>
+
+    <!-- Information Section -->
+    <section class="main-info">
+        <div class="info">
+            <h2>Introducing new music player for listening to your favorite songs.</h2>
+        </div>
+    </section>
+
+    <!-- Music Player Section -->
+    <section class="main-player">
+        <div class="player">
+            <!-- Define the section for displaying details -->
+            <div class="details">
+                <div class="now-playing">Music Player</div>
+                <div class="track-art"></div>
+                <div class="track-name">Make Way for King</div>
+                <div class="track-artist">Rabins Rai</div>
+            </div>
+
+            <!-- Define the section for displaying track buttons -->
+            <div class="buttons">
+                <div class="prev-track" onclick="prevTrack()">
+                    <i class="fa fa-step-backward fa-2x"></i>
+                </div>
+                <div class="playpause-track" onclick="playpauseTrack()">
+                    <i class="fa fa-play-circle fa-5x"></i>
+                </div>
+                <div class="next-track" onclick="nextTrack()">
+                    <i class="fa fa-step-forward fa-2x"></i>
+                </div>
+            </div>
+
+            <!-- Define the section for displaying the seek slider-->
+            <div class="slider_container">
+                <div class="current-time">00:00</div>
+                <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+                <div class="total-duration">4:23</div>
+            </div>
+
+            <!-- Define the section for displaying the volume slider-->
+            <div class="slider_container">
+                <i class="fa fa-volume-down"></i>
+                <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
+                <i class="fa fa-volume-up"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Genre Tab Main Container -->
+    <main id="main-recommend">
+        <!-- Recommendation Section -->
+        <section class="main-rec">
+            <div class="player-header">
+                <h1>Play Your Favorite Music Now</h1>
+            </div>
+            <p>Choose your favorite music genre to get and play from our best recommendation</p>
+
+        </section>
+        <!-- Links to view following Sections -->
+        <div class="tab">
+            <!-- onClick HTML property for event listning -->
+            <button>HipHop</button>
+            <button style="background-color: #FF157E;">R&B/Soul</button>
+            <button>Jazz</button>
+            <button>Reggae</button>
+            <button>Country</button>
+        </div>
+
+        <!-- Hip-hop Section -->
+        <section id="hip-hop" class="tabContents">
+            <div class="music-list">
+                <h1>Recommendations</h1>
+                <div>
+                    <h3 style="color: #FF157E;"><i class="fa fa-play-circle"></i>All Good</h3>
+                    <h3 style="color: #FF157E;">2:34</h3>
+                </div>
+                <div>
+                    <h3><i class="fa fa-play-circle"></i>Stay Ready</h3>
+                    <h3>2:34</h3>
+                </div>
+                <div>
+                    <h3><i class="fa fa-play-circle"></i>No Guidance</h3>
+                    <h3>2:34</h3>
+                </div>
+                <div>
+                    <h3><i class="fa fa-play-circle"></i>Rack City</h3>
+                    <h3>2:34</h3>
+                </div>
+                <div>
+                    <h3><i class="fa fa-play-circle"></i>Trouble</h3>
+                    <h3>2:34</h3>
+                </div>
+                <div>
+                    <h3><i class="fa fa-play-circle"></i>Rockstar</h3>
+                    <h3>2:34</h3>
+                </div>
+                <div>
+                    <h3><i class="fa fa-play-circle"></i>Down Below</h3>
+                    <h3>2:34</h3>
+                </div>
+            </div>
+            <div class="music-info">
+                <img src="../image/album7.png" alt="album">
+                <h2>All Good</h2>
+                <h5>The song is debuted at number two on the Billboard 100 chart. <br> Album: Chilombo <br> Genre: R&B/Soul</h5>
+                <button><a style="text-decoration: none; color: #ffffff;" href="../html/music.html">Play Now</a></button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="main-footer">
+        <div class="social-links">
+            <h1>Find us on Social Media</h1>
+            <div class="social-icon">
+                <a href="https://www.instagram.com/" target=”_blank”><i class="fa fa-instagram"></i></a>
+                <a href="https://www.facebook.com/" target=”_blank”><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/" target=”_blank”><i class="fa fa-twitter"></i></a>
+                <a href="https://www.spotify.com/us/" target=”_blank”><i class="fa fa-spotify"></i></a>
+                <a href="https://www.youtube.com/" target=”_blank”><i class="fa fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© Rabins Record Label. All rights reserved 2021.</p>
+        </div>
+    </footer>
+
+    <!-- Script Links -->
+    <script src="../js/format.js"></script>
+</body>
+
+</html>

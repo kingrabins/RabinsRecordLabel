@@ -1,0 +1,188 @@
+/* Start of code */
+
+* {
+    /* Initial CSS applied to all elements in page */
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    /* Set same font for all text elements*/
+}
+
+
+/* CSS to provide background color and padding spacing
+    Display is set to flex for arranging two sections in row */
+
+.section-register {
+    background-color: #24033A;
+    display: flex;
+    padding: 100px 0;
+}
+
+.reg-h {
+    text-align: center;
+    padding: 100px;
+    background-color: #24033A;
+    color: #FFFFFF;
+    font-size: 32px;
+}
+
+.main-register {
+    flex: 3;
+    /* Sets flex size as 3 */
+    background-color: #F5F5F5;
+    /* Set background color */
+    border-radius: 100px 0 0 100px;
+    /* Give border radius on top and bottom left*/
+    padding: 50px;
+}
+
+.main-register h1 {
+    text-align: center;
+    /* Bring text content to center*/
+    color: #FF157E;
+    margin-bottom: 40px;
+    /* Set margin at bottom only*/
+    font-size: 36px;
+}
+
+.main-register label {
+    padding-right: 20px;
+    /* Set padding at right only*/
+    line-height: 57px;
+    /* Make line height more taller*/
+    color: #030730;
+    font-size: 24px;
+}
+
+.main-register input {
+    padding: 12px 20px;
+    width: 400px;
+    /* Set width of an element */
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    /* Set border */
+    border-radius: 10px;
+    /* Set border radius to 10px*/
+}
+
+.main-login p {
+    padding-top: 200px;
+    /* Set padding at top only*/
+    text-align: center;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.main-login button {
+    background-color: #FF157E;
+    /* Set background color of button*/
+    color: white;
+    /* Set font color as white*/
+    padding: 10px 20px;
+    /* pading 10px for top, bottom and 20px for left and right */
+    margin: auto;
+    margin-top: 20px;
+    /* Set margin at top only*/
+    border: none;
+    /* removes default button border */
+    border-radius: 10px;
+    cursor: pointer;
+    /* Set cursor as pointer*/
+    font-size: 24px;
+    display: flex;
+    /* to make button center */
+}
+
+.main-login button:hover {
+    background-color: #01b7ff;
+    /* Change color on button hover */
+}
+
+
+/* to remove default underline in hyperlink*/
+
+.main-login a {
+    text-decoration: none;
+    /*remove any default decoration*/
+}
+
+.main-login {
+    flex: 1;
+    /* flex size is set to 1 */
+}
+
+.main-register button {
+    background-color: #FF157E;
+    color: white;
+    padding: 10px 0;
+    border: none;
+    /* remove default button border and set to none */
+    width: 100%;
+    /* set full width */
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 28px;
+    /* font size of button */
+    margin-top: 20px;
+    /* Set margin at top only*/
+}
+
+.main-register button:hover {
+    background-color: #01b7ff;
+    /* Change color on button hover */
+}
+
+.form-login {
+    display: flex;
+    justify-content: space-around;
+    /* Give space around each elements*/
+}
+
+
+/* Making Responsive Register Page */
+
+@media screen and (max-width: 1000px) {
+    /*  Applied When screen size is smaller than 1000px */
+    .main-register input {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    /*  Applied When screen size is smaller than 700px */
+    .section-register {
+        flex-direction: column;
+        /* to keep elements as column alignment */
+    }
+    .main-register {
+        border-radius: 0;
+        /* back to default border radius*/
+    }
+    .main-login {
+        padding: 20px;
+        /* padding of 20px to all sides */
+    }
+    .main-login p{
+        padding-top: 10px;
+        font-size: 16px;
+    }
+    .main-login button {
+        font-size: 16px;
+        padding: 5px 10px;
+    }
+    .reg-h {
+        display: none;
+    }
+    .main-register h1 {
+        font-size: 22px;
+    }
+    .main-register button {
+        font-size: 16px;
+    }
+    .labels label {
+        font-size: 18px;
+    }
+}
+
+
+/* End of code */

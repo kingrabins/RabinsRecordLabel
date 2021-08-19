@@ -1,0 +1,176 @@
+    /* Login Section */
+    
+    .section-login {
+        background-color: #24033A;
+        /* use of color code in background color */
+        display: flex;
+        /* Display is set to flex */
+        padding: 100px 0;
+        /* padding spacing */
+    }
+    
+    .reg-h {
+        text-align: center;
+        padding: 100px;
+        background-color: #24033A;
+        color: #FFFFFF;
+        font-size: 36px;
+    }
+    
+    .main-login {
+        flex: 2;
+        /* set flex size 2 */
+        background-color: #F5F5F5;
+        border-radius: 0 100px 100px 0;
+        /* Give border radius on top and bottom right */
+        padding: 50px;
+        /* give padding to all sides */
+    }
+    
+    .main-login h1 {
+        text-align: center;
+        /* align text to center */
+        color: #FF157E;
+        margin-bottom: 40px;
+        /* set margin at bottom only */
+        font-size: 42px;
+        /* font size to heading */
+    }
+    
+    .main-login label {
+        padding: 50px;
+        /* give padding to all sides */
+        line-height: 50px;
+        /* set height of text line */
+        color: #030730;
+        /* font color #030730*/
+        font-size: 28px;
+        /* set font size of label text */
+    }
+    
+    .main-login input {
+        padding: 12px 20px;
+        margin: 8px 0;
+        /* give margin to top and bottom only */
+        display: inline-block;
+        /* display as inline block */
+        border: 1px solid #ccc;
+        /* set border for input text fields */
+        width: 400px;
+        /* width of login buton */
+        border-radius: 10px;
+        /*border radius on all corners */
+    }
+    
+    .main-login a {
+        background-color: #FF157E;
+        color: white;
+        padding: 10px 50px;
+        border-radius: 10px;
+        font-size: 28px;
+        width: 100%;
+        text-decoration: none;
+    }
+    
+    .main-login a:hover {
+        background-color: #55CDF1;
+        /* Change color on button hover */
+    }
+    
+    .main-register {
+        flex: 1;
+        /* set flex size to 1*/
+    }
+    
+    .main-register p {
+        text-align: center;
+        /* make text appear in center alignment */
+        font-size: 28px;
+        color: #FFFFFF;
+        padding-top: 100px;
+    }
+    
+    .main-register button {
+        background-color: #FF157E;
+        color: white;
+        /* button color */
+        padding: 10px 20px;
+        margin: 20px auto;
+        /* set margin at top, bottom with 50px and left right auto */
+        border: none;
+        /* remove default button border and set to none */
+        border-radius: 10px;
+        cursor: pointer;
+        /* cursor as link pointer */
+        font-size: 28px;
+        /* font size of button */
+        display: flex;
+        /* to make button center */
+    }
+    
+    .main-register button:hover {
+        /* Change color on button hover */
+        background-color: #55CDF1;
+    }
+    /* to remove default underline in hyperlink*/
+    
+    .main-register a {
+        text-decoration: none;
+        /*remove any default decoration and set to none */
+    }
+    
+    #form-login {
+        display: flex;
+        /* keep items in flex layout */
+        justify-content: space-around;
+        /* give space to each item */
+    }
+    /* Making Responsive Login Page*/
+    
+    @media screen and (max-width: 1000px) {
+        /*  Applied When screen size is smaller than 1000px */
+        .main-login input {
+            width: 100%;
+        }
+    }
+    
+    @media screen and (max-width: 700px) {
+        /*  Applied When screen size is smaller than 700px */
+        .section-login {
+            flex-direction: column-reverse;
+            /* to keep register details at top */
+        }
+        .main-login {
+            padding: auto;
+            border-radius: 0;
+            /* back to default border radius*/
+        }
+        .main-register p{
+            padding-top: 10px;
+            font-size: 16px;
+        }
+        .main-register button {
+            font-size: 16px;
+            padding: 5px 10px;
+        }
+        .reg-h {
+            display: none;
+        }
+        .main-login h1 {
+            font-size: 22px;
+        }
+        #form-login a {
+            font-size: 16px;
+        }
+        #form-login label {
+            font-size: 16px;
+            padding-left: 10px;
+        }
+        .main-login input {
+           width: 100px;
+        }
+        #form-login span {
+            font-size: 12px;
+        }
+        
+    }

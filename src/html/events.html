@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - Rabins Record Label</title>
+    <link rel="icon" href="../image/ICON.png" type="icon" sizes="16x16">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link class="theme" rel="stylesheet" type="text/css" href="../css/lightTheme.css">
+    <script></script>
+    <style>
+        .main-info {
+            background-image: url("../image/5.jpg");
+        }
+        
+        .main-booking {
+            background-image: url("../image/microphone.jpg");
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="main-nav">
+        <nav id="navi">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+            <i class="fa fa-bars"></i>
+            </label>
+            <a style="margin-left: 40px;" href="index.html"><img src="../image/LOGOR.png" alt="Logo"></a>
+            <ul>
+            <li><a class="active" href="index.html">HOME</a></li>
+            <li><a href="music.html">MUSIC</a></li>
+            <li><a href="studio.html">STUDIO</a></li>
+            <li><a href="events.html">EVENTS</a></li>
+            <li><a href="about.html">CONNECT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Usability Section -->
+    <section class="topnav">
+        <div class="search-container">
+            <div class="user-exp">
+                <h2> Preferences </h2>
+                <span onclick="toggleTheme('../css/smallFont.css');">A-</span>
+                <span><i onclick="toggleTheme('../css/lightTheme.css');" class="fa fa-sun-o"></i></span>
+                <span>|</span>
+                <span onclick="toggleTheme('../css/darkSmall.css');">A-</span>
+                <span><i onclick="toggleTheme('../css/darkTheme.css');" class="fa fa-moon-o"></i></span>
+            </div>
+            <div class="losss">
+                <input type="text" placeholder="Search..." name="search">
+                <i id="searchh" class="fa fa-search"></i>
+                <a href="login.html ">SignUp</a>
+                <i style="padding: 10px 0;font-size: 25px;color: #FF157E;margin-right: 20px; " class="fa fa-user"></i>
+            </div>
+        </div>
+        <button onclick="topFunction() " id="myBtn" title="Go to top"><i class="fa fa-chevron-up "></i></button>
+    </section>
+
+    <!-- Information Section -->
+    <section class="main-info">
+        <div class="info">
+            <h2>We have our ears in the streets cause the streets are singing.</h2>
+        </div>
+    </section>
+
+
+    <!-- Artist Feature Section -->
+    <section class="event-ft">
+        <div>
+            <h1>Events</h1>
+            <p>Thousands of people are feeling the same elation as you. The music lifts you together, and you feel connected to them all. That’s the power of music. And that’s the singular
+                experience of a music festival.</p>
+        </div>
+        <div class="event-img">
+            <div><i onclick="newEvent1()" id="left" class="fa fa-chevron-left"></i></div>
+            <div id="events">
+                <div>
+                    <img id="event1" src="../image/event1.png" alt="events">
+                    <h2 id="ev1">Coachella</h2>
+                    <div class="event-button"><a href="https://www.summerfest.com/" target=”_blank”><button id="go-book">Check this Event</button></a></div>
+                </div>
+                <div>
+                    <img id="event2" src="../image/event2.png" alt="events">
+                    <h2 id="ev2">Summer Fest</h2>
+                    <div class="event-button"><a href="https://www.summerfest.com/" target=”_blank”><button id="go-book">Check this Event</button></a></div>
+                </div>
+                <div>
+                    <img id="event3" src="../image/event3.png" alt="events">
+                    <h2 id="ev3">Montreux Jazz</h2>
+                    <div class="event-button"><a href="https://www.summerfest.com/" target=”_blank”><button id="go-book">Check this Event</button></a></div>
+                </div>
+            </div>
+            <div><i onclick="newEvent2()" id="right" class="fa fa-chevron-right"></i></div>
+        </div>
+    </section>
+    <!-- Book Show Section -->
+    <section class="main-booking">
+        <h1>Book Shows with Us</h1>
+        <p>Make your favorite artists perform for your </p>
+        <p>events and shows.</p>
+        <div>
+            <a href="../html/login.html"><button id="go-book">Book Now</button></a>
+            <a href="../html/studio.html"><button id="go-know">Know More</button></a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="main-footer">
+        <div class="social-links">
+            <h1>Find us on Social Media</h1>
+            <div class="social-icon">
+                <a href="https://www.instagram.com/" target=”_blank”><i class="fa fa-instagram"></i></a>
+                <a href="https://www.facebook.com/" target=”_blank”><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/" target=”_blank”><i class="fa fa-twitter"></i></a>
+                <a href="https://www.spotify.com/us/" target=”_blank”><i class="fa fa-spotify"></i></a>
+                <a href="https://www.youtube.com/" target=”_blank”><i class="fa fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© Rabins Record Label. All rights reserved 2021.</p>
+        </div>
+    </footer>
+
+    <!-- Script Links -->
+    <script src="../js/format.js"></script>
+</body>
+
+</html>

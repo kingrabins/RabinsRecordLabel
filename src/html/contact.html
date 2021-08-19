@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Rabins Record Label</title>
+    <link rel="icon" href="../image/ICON.png" type="icon" sizes="16x16">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.0/dist/sweetalert2.all.min.js"></script>
+    <link class="theme" rel="stylesheet" type="text/css" href="../css/lightTheme.css">
+    <script></script>
+    <style>
+        .main-info {
+            background-image: url("../image/desktop.jpg");
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="main-nav">
+        <nav id="navi">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+            <i class="fa fa-bars"></i>
+            </label>
+            <a style="margin-left: 40px;" href="index.html"><img src="../image/LOGOR.png" alt="Logo"></a>
+            <ul>
+            <li><a class="active" href="index.html">HOME</a></li>
+            <li><a href="music.html">MUSIC</a></li>
+            <li><a href="studio.html">STUDIO</a></li>
+            <li><a href="events.html">EVENTS</a></li>
+            <li><a href="about.html">CONNECT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Usability Section -->
+    <section class="topnav">
+        <div class="search-container">
+            <div class="user-exp">
+                <h2> Preferences </h2>
+                <span onclick="toggleTheme('../css/smallFont.css');">A-</span>
+                <span><i onclick="toggleTheme('../css/lightTheme.css');" class="fa fa-sun-o"></i></span>
+                <span>|</span>
+                <span onclick="toggleTheme('../css/darkSmall.css');">A-</span>
+                <span><i onclick="toggleTheme('../css/darkTheme.css');" class="fa fa-moon-o"></i></span>
+            </div>
+            <div class="losss">
+                <input type="text" placeholder="Search..." name="search">
+                <i id="searchh" class="fa fa-search"></i>
+                <a href="login.html ">SignUp</a>
+                <i style="padding: 10px 0;font-size: 25px;color: #FF157E;margin-right: 20px; " class="fa fa-user"></i>
+            </div>
+        </div>
+        <button onclick="topFunction() " id="myBtn" title="Go to top"><i class="fa fa-chevron-up "></i></button>
+    </section>
+
+    <!-- Information Section -->
+    <section class="main-info">
+        <div class="info">
+            <h2>We are the music makers, and we are the dreamers of dreams.</h2>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="main-about">
+        <div>
+            <h3>Click to Go</h3>
+            <div class="about-buttons">
+                <button id="aboutUs"><a style="color:#FFFFFF" href="about.html">About Us</a></button>
+                <button id="contactUs"><a style="color: #24033A;" href="contact.html">Contact Us</a></button>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="content">
+            <h2>Get in touch with Us</h2>
+            <p>Contact us for booking your favourite artists in your events. Feel free to provide us any feedback to our record label.</p>
+        </div>
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"><i class="fa fa-map-marker"></i></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>Kathmandu, Nepal</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-phone"></i></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>+977-0123456</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-envelope-o"></i></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>contact@record.label</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactForm">
+                <form>
+                    <h2>Send Message</h2>
+                    <div class="inputBox">
+                        <span>Name</span><input type="text" placeholder="Enter your full name" required="required">
+                    </div>
+                    <div class="inputBox">
+                       <span> Email</span><input type="email" placeholder="Enter your email" required="required">
+                    </div>
+                    <div class="inputBox">
+                        <span>Message</span><textarea placeholder="Enter your message..." required="required"></textarea>
+                    </div>
+                    <div class="inputBox">
+                        <p>Submit</p>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="main-newsletter">
+        <h1>Subscribe to our Newsletter</h1>
+        <p>Enter your email address below.</p>
+        <form id="sub" class="sub-form">
+            <input id="email" type="email " placeholder="example@email.address " name="user " required> <br>
+            <input id="checklabel" style="margin-bottom: 50px; width: 18px; height: 18px;" name="check" type="checkbox">
+            <label for="checklabel">Get Daily Recommendations and Updates</label> <br>
+            <span id="subs" onclick="subscribeSuccess()" type="submit">Subscribe</span>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="main-footer ">
+        <div class="social-links ">
+            <h1>Find us on Social Media</h1>
+            <div class="social-icon">
+                <a href="https://www.instagram.com/" target=”_blank”><i class="fa fa-instagram"></i></a>
+                <a href="https://www.facebook.com/" target=”_blank”><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/" target=”_blank”><i class="fa fa-twitter"></i></a>
+                <a href="https://www.spotify.com/us/" target=”_blank”><i class="fa fa-spotify"></i></a>
+                <a href="https://www.youtube.com/" target=”_blank”><i class="fa fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="copyright ">
+            <p>© Rabins Record Label. All rights reserved 2021.</p>
+        </div>
+    </footer>
+
+    <!-- Script Links -->
+    <script src="../js/format.js "></script>
+</body>
+
+</html>
+
+</html>

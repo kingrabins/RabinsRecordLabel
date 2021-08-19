@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio - Rabins Record Label</title>
+    <link rel="icon" href="../image/ICON.png" type="icon" sizes="16x16">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link class="theme" rel="stylesheet" type="text/css" href="../css/lightTheme.css">
+    <script></script>
+    <style>
+        .main-info {
+            background-image: url("../image/soundboard.jpg");
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="main-nav">
+        <nav id="navi">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+            <i class="fa fa-bars"></i>
+            </label>
+            <a style="margin-left: 40px;" href="index.html"><img src="../image/LOGOR.png" alt="Logo"></a>
+            <ul>
+            <li><a class="active" href="index.html">HOME</a></li>
+            <li><a href="music.html">MUSIC</a></li>
+            <li><a href="studio.html">STUDIO</a></li>
+            <li><a href="events.html">EVENTS</a></li>
+            <li><a href="about.html">CONNECT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Usability Section -->
+    <section class="topnav">
+        <div class="search-container">
+            <div class="user-exp">
+                <h2> Preferences </h2>
+                <span onclick="toggleTheme('../css/smallFont.css');">A-</span>
+                <span><i onclick="toggleTheme('../css/lightTheme.css');" class="fa fa-sun-o"></i></span>
+                <span>|</span>
+                <span onclick="toggleTheme('../css/darkSmall.css');">A-</span>
+                <span><i onclick="toggleTheme('../css/darkTheme.css');" class="fa fa-moon-o"></i></span>
+            </div>
+            <div class="losss">
+                <input type="text" placeholder="Search..." name="search">
+                <i id="searchh" class="fa fa-search"></i>
+                <a href="login.html ">SignUp</a>
+                <i style="padding: 10px 0;font-size: 25px;color: #FF157E;margin-right: 20px; " class="fa fa-user"></i>
+            </div>
+        </div>
+        <button onclick="topFunction() " id="myBtn" title="Go to top"><i class="fa fa-chevron-up "></i></button>
+    </section>
+
+    <!-- Information Section -->
+    <section class="main-info">
+        <div class="info">
+            <h2>The perfect place for music heaven. Here Comes Da BOOM!</h2>
+        </div>
+    </section>
+
+    <!-- Artist Feature Section -->
+    <section class="artist-ft">
+        <div>
+            <h1>Our Featured Artists</h1>
+        </div>
+        <p>Our studio has a lot of signed artists, including top recognized artists and new upcoming artists. Together we are a large family. </p>
+        <div class="artist-img">
+            <div><i onclick="newArtist1()" id="left" class="fa fa-chevron-left"></i></div>
+            <div id="artists">
+                <div><img id="artist1" src="../image/tyga.jpg" alt="tyga"></div>
+                <div><img id="artist2" src="../image/iggy.jpg" alt="iggy"></div>
+                <div><img id="artist3" src="../image/rody.jpg" alt="rody"></div>
+            </div>
+            <div><i onclick="newArtist2()" id="right" class="fa fa-chevron-right"></i></div>
+        </div>
+        <div class="song-button"><button><a href="../html/music.html">Listen to Song</a></button></div>
+    </section>
+
+    <!-- Studio Gallery -->
+    <section class="main-gallery">
+        <!-- Header -->
+        <div class="gallery-header">
+            <h1>Studio gallery</h1>
+            <p>Collections of some of the best moments with our studio family <br> and performances from our artists.
+            </p>
+        </div>
+
+        <!-- Photo Grid -->
+        <div class="row">
+            <div class="column">
+                <img src="../image/13.jpg" alt="studio" style="width:100%">
+                <img src="../image/6.jpg" alt="studio"  style="width:100%">
+                <img src="../image/14.jpg" alt="studio"  style="width:100%">
+                <img src="../image/8.jpg" alt="studio"  style="width:100%">
+                <img src="../image/7.jpg" alt="studio"  style="width:100%">
+            </div>
+            <div class="column">
+                <img src="../image/12.jpg" alt="studio"  style="width:100%">
+                <img src="../image/4.jpg" alt="studio"  style="width:100%">
+                <img src="../image/2.jpg" alt="studio"  style="width:100%">
+
+            </div>
+            <div class="column">
+                <img src="../image/1.jpg" alt="studio"  style="width:100%">
+                <img src="../image/11.jpg" alt="studio"  style="width:100%">
+                <img src="../image/10.jpg" alt="studio"  style="width:100%">
+                <img src="../image/chriss.jfif" alt="studio"  style="width:100%">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="main-footer">
+        <div class="social-links">
+            <h1>Find us on Social Media</h1>
+            <div class="social-icon">
+                <a href="https://www.instagram.com/" target=”_blank”><i class="fa fa-instagram"></i></a>
+                <a href="https://www.facebook.com/" target=”_blank”><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/" target=”_blank”><i class="fa fa-twitter"></i></a>
+                <a href="https://www.spotify.com/us/" target=”_blank”><i class="fa fa-spotify"></i></a>
+                <a href="https://www.youtube.com/" target=”_blank”><i class="fa fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© Rabins Record Label. All rights reserved 2021.</p>
+        </div>
+    </footer>
+
+    <!-- Script Links -->
+    <script src="../js/format.js"></script>
+</body>
+
+</html>
