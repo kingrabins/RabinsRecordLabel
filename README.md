@@ -1,6 +1,7 @@
-# RabinsRecordLabel
+# © Rabins Record Label
 
-![image](https://user-images.githubusercontent.com/81344523/130081421-b2562417-246c-4f47-8e4e-522349ad1b74.png)
+![image](https://user-images.githubusercontent.com/81344523/130097271-48c5e2ea-0d07-4632-b722-fd28e4efab0c.png)
+
 
 Rabins Record Label is fictional Record Label based on music industry and the website I have built is for this record label. The website is fully mobile responsive and have other major accessibility features like small and large font sizes, light, and dark themes. The website has eight main interfaces, they are Home, Music, Studio, Events, About, Contact, Register and Login Page. The interface of Home page has most of the major features provided by the website as it works as landing page of the website.
 ![HomePageDark (2)](https://user-images.githubusercontent.com/81344523/130088467-1230096e-d6a0-4b7a-84d8-bbcf0e749df3.png)
